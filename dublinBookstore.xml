@@ -1,52 +1,111 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml-stylesheet type="text/xsl" href="Dublin's bookstore.xsl"?>
-
-
-<bookstore> 
-    <book category = "Science Fiction">
-    
-    <details>    
-        
-        <title>Brave New World</title> 
-        <author>Aldous Huxley</author>   
-        <year>1932</year>
-        <price>9.19</price>
-    
+<bookstore>
+  <book category="Science Fiction">
+    <details>
+      <title>Brave New World</title>
+      <author>Aldous Huxley</author>
+      <year>1932</year>
+      <price>9.19</price>
     </details>
-    </book>
-
-    <book category = "NonFiction">
-    <details>    
-        
-        <title>The Victorian Internet</title> 
-        <author>Tom Standage</author>   
-        <year>1998</year>
-        <price>8.99</price>
-    
+    <details>
+      <title>asdas</title>
+      <author>asdasd</author>
+      <year>asdasd</year>
+      <price>asdasd</price>
     </details>
-    </book>
-
-    <book category = "Fiction">
-    <details>    
-        
-        <title>On the Come Up</title> 
-        <author>Angie Thomas</author>   
-        <year> 2019</year>
-        <price>9.99</price>
-    
+    <details>
+      <title>asd</title>
+      <author>asds</author>
+      <year>asdsa</year>
+      <price>sdasd</price>
     </details>
-    </book>
-
-
-
-
-
-
-
-
-
-
-
-
-
-</bookstore> 
+    <details>
+      <title>asd</title>
+      <author>sdsad</author>
+      <year>sadsad</year>
+      <price>asdsd</price>
+    </details>
+    <details>
+      <title>sd</title>
+      <author>dsd</author>
+      <year>1998</year>
+      <price>9.55</price>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
+    </details>
+    <details>
+      <title>asd</title>
+      <author>asdasd</author>
+      <year>asdasd</year>
+      <price>10</price>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
+    </details>
+  </book>
+  <book category="Non Fiction">
+    <details>
+      <title>The Victorian Internet</title>
+      <author>Tom Standage</author>
+      <year>1998</year>
+      <price>8.99</price>
+    </details>
+  </book>
+  <book category="Fiction">
+    <details>
+      <title>On the Come Up</title>
+      <author>Angie Thomas</author>
+      <year> 2019</year>
+      <price>9.99</price>
+    </details>
+  </book>
+</bookstore>
