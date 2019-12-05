@@ -32,64 +32,10 @@
       <price>9.55</price>
     </details>
     <details>
-      <title/>
-      <author/>
-      <year/>
-      <price/>
-    </details>
-    <details>
-      <title/>
-      <author/>
-      <year/>
-      <price/>
-    </details>
-    <details>
-      <title/>
-      <author/>
-      <year/>
-      <price/>
-    </details>
-    <details>
-      <title/>
-      <author/>
-      <year/>
-      <price/>
-    </details>
-    <details>
-      <title/>
-      <author/>
-      <year/>
-      <price/>
-    </details>
-    <details>
-      <title/>
-      <author/>
-      <year/>
-      <price/>
-    </details>
-    <details>
-      <title/>
-      <author/>
-      <year/>
-      <price/>
-    </details>
-    <details>
       <title>asd</title>
       <author>asdasd</author>
       <year>asdasd</year>
       <price>10</price>
-    </details>
-    <details>
-      <title/>
-      <author/>
-      <year/>
-      <price/>
-    </details>
-    <details>
-      <title/>
-      <author/>
-      <year/>
-      <price/>
     </details>
   </book>
   <book category="Non Fiction">
@@ -98,6 +44,12 @@
       <author>Tom Standage</author>
       <year>1998</year>
       <price>8.99</price>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
     </details>
   </book>
   <book category="Fiction">
