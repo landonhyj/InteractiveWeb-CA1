@@ -4,9 +4,10 @@
             <table id="bookTable" class="indent">
                 <thead>
                     <tr>
-                        <th colspan ="4">Bookstore's list</th>
+                        <th colspan ="5">Bookstore's list</th>
                     </tr>    
                     <tr>   
+                        <th>Category</th>   
                         <th>Title</th>
                         <th>Author</th>
                         <th>Year</th>
@@ -17,14 +18,15 @@
                 <tbody>
                     <xsl:for-each select="/bookstore/book">
                         <tr>
-                            <td colspan="4">
+                            <td colspan="5">
                                 <xsl:value-of select="@category"/>
                             </td>
                         </tr>
 
                         <xsl:for-each select="details">
                             <tr id="{position()}">
-                                <tr>
+
+                                    <td></td>
                                     <td>
                                         <xsl:value-of select="title" />
                                     </td>
@@ -40,7 +42,6 @@
                                     <td align="right">
                                         <xsl:value-of select="price" />
                                     </td>
-                                </tr>  
                             </tr>   
 
                         </xsl:for-each>

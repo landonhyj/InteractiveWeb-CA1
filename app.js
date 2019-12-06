@@ -23,7 +23,7 @@ function xmlFileToJs(filename, cb) {
 }
 
 //Function to convert JSON to XML and save it
-    function jsToXmlFile(filename, obj, cb) {
+function jsToXmlFile(filename, obj, cb) {
     var filepath = path.normalize(path.join(__dirname, filename));
     var builder = new xml2js.Builder();
     var xml = builder.buildObject(obj);
@@ -36,7 +36,7 @@ router.post('/post/json', function(req, res){
     xmlFileToJs('dublinBookstore.xml', function(err, result){
         if(err) throw (err);
         result.bookstore.book[obj.sec_n].details.push({'title': obj.title,'author': obj.author,'year': obj.year, 'price': obj.price});
-        console.log(result);
+        //console.log(result);
         jsToXmlFile('dublinBookstore.xml', result, function(err){
         if(err) console.log(err);
             })
@@ -54,6 +54,7 @@ router.post('/post/delete', function(req, res) {
     // Function to read in XML file, convert it to JSON, delete the required object and write back to XML file
     xmlFileToJs('dublinBookstore.xml', function(err, result) {
       if (err) throw (err);
+      
       //This is where we delete the object based on the position of the section and position of the entree, as being passed on from index.html
       delete result.bookstore.book[obj.book].details[obj.details];
       //This is where we convert from JSON and write back our XML file
@@ -95,9 +96,6 @@ router.get('/get/html', function(req, res) {
     res.end(result.toString()); //Converting the result into a string before respond to the user
 
 });
-
-
-
 
 
 server.listen(process.env.port || 3000, process.env.IP || "0.0.0.0", function(){
