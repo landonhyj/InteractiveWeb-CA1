@@ -25,6 +25,10 @@
 
                         <xsl:for-each select="details">
                             <tr id="{position()}">
+<<<<<<< HEAD
+=======
+                                <tr>
+>>>>>>> a2a9ed274f63ba48b18aa9b9e088ee4a414f09d2
 
                                     <td></td>
                                     <td>

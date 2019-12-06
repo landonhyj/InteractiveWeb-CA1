@@ -7,6 +7,39 @@
       <year>1932</year>
       <price>9.19</price>
     </details>
+<<<<<<< HEAD
+=======
+    <details>
+      <title>asdas</title>
+      <author>asdasd</author>
+      <year>asdasd</year>
+      <price>asdasd</price>
+    </details>
+    <details>
+      <title>asd</title>
+      <author>asds</author>
+      <year>asdsa</year>
+      <price>sdasd</price>
+    </details>
+    <details>
+      <title>asd</title>
+      <author>sdsad</author>
+      <year>sadsad</year>
+      <price>asdsd</price>
+    </details>
+    <details>
+      <title>sd</title>
+      <author>dsd</author>
+      <year>1998</year>
+      <price>9.55</price>
+    </details>
+    <details>
+      <title>asd</title>
+      <author>asdasd</author>
+      <year>asdasd</year>
+      <price>10</price>
+    </details>
+>>>>>>> a2a9ed274f63ba48b18aa9b9e088ee4a414f09d2
   </book>
   <book category="Non Fiction">
     <details>
@@ -14,6 +47,12 @@
       <author>Tom Standage</author>
       <year>1998</year>
       <price>8.99</price>
+    </details>
+    <details>
+      <title/>
+      <author/>
+      <year/>
+      <price/>
     </details>
   </book>
   <book category="Fiction">

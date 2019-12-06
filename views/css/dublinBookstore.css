@@ -86,5 +86,9 @@ table, th, td {
 
 .selected {
             background-color: #dc3545;
+<<<<<<< HEAD
             color:white;
+=======
+            color:red;
+>>>>>>> a2a9ed274f63ba48b18aa9b9e088ee4a414f09d2
 }
