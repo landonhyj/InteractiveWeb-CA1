@@ -41,7 +41,7 @@ a:hover {
 }
 
 .sec-title{
-    text-align: left;
+    text-align: left
 }
 
 #bg {
@@ -98,6 +98,15 @@ table, th, td {
 
 .selected {
             background-color: #dc3545;
+<<<<<<< HEAD
             color:rgb(44, 39, 39);
 
 }
+=======
+<<<<<<< HEAD
+            color:white;
+=======
+            color:red;
+>>>>>>> a2a9ed274f63ba48b18aa9b9e088ee4a414f09d2
+}
+>>>>>>> b504cb0f55c1a63bbe1bca18c8cc356d414ff80e
