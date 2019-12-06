@@ -26,6 +26,7 @@
                         <xsl:for-each select="details">
                             <tr id="{position()}">
 
+
                                     <td></td>
                                     <td>
                                         <xsl:value-of select="title" />

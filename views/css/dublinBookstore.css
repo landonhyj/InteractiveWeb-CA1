@@ -7,61 +7,73 @@ html {
 
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+.text-muted{
+    font-weight: bold;
+    color: black;
+
+}
+.navbar-brand{
+    font-weight: bold;
+    color: black;
+
 }
 
-.navbar{
-    overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+.nav-item{
+    font-weight: bold;
+    color: black;
+
 }
 
-li {
-  display: inline;
+.option{
+    font-weight: bold;
+
+
 }
 
 a {
-  display: block;
+  display: inline;
   padding: 8px;
-  background-color: #dddddd;
+  background-color: #CD853F;
 }
 
+a:hover {
+  background-color: rgba(61, 36, 3, 0.705);
+}
 
+.sec-title{
+    text-align: left;
+}
 
 #bg {
   top: 0; 
   left: 0; 
-	
+
+  object-fit: cover;	
   /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
   position: absolute;
 
-  color: #f1f1f1; /* Grey text */
+  color: #080808; /* Grey text */
 }
 
 body {
   /* Margin bottom by footer height */
   margin-bottom: 70px;
+  font-family: oblique;
 }
 .footer {
-  position: absolute;
+  position: fixed;
+  display: block;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 50px;
   line-height: 50px; /* Vertically center the text there */
-  background-color: black;
+  background-color: Peru ;
 }
 table, th, td {
-     border-collapse: collapse;
+     border-collapse: separate;
      border: 5px solid black;
      text-align: center;
      cursor:pointer;
@@ -86,5 +98,6 @@ table, th, td {
 
 .selected {
             background-color: #dc3545;
-            color:white;
+            color:rgb(44, 39, 39);
+
 }
