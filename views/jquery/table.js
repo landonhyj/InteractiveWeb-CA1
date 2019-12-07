@@ -1,3 +1,4 @@
+// Function that print out table 
 function draw_table(){
     $("#results").empty();
     $.getJSONuncached = function(url) {
@@ -14,6 +15,7 @@ function draw_table(){
     $.getJSONuncached("/get/html")
 }
 
+// Function that able to select row before deleting a row 
 function select_row()
 {
 	$("#bookTable tbody tr[id]").click(function ()
@@ -26,6 +28,7 @@ function select_row()
 	})
 };
 
+// Function that delete a row 
 function delete_row(bk, det)
 {
 	$("#delete").click(function ()

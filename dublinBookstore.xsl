@@ -14,7 +14,7 @@
                         <th>Price</th> 
                     </tr> 
                 </thead>    
-                     
+                     <!--   Printing the category of books and details of the book    -->
                 <tbody>
                     <xsl:for-each select="/bookstore/book">
                         <tr>
@@ -26,7 +26,7 @@
                         <xsl:for-each select="details">
                             <tr id="{position()}">
 
-
+                        <!-- Printing each data details which store in xml file  -->
                                     <td></td>
                                     <td>
                                         <xsl:value-of select="title" />
