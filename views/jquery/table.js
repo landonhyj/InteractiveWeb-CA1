@@ -20,6 +20,7 @@ function select_row()
 {
 	$("#bookTable tbody tr[id]").click(function ()
 	{
+        
 		$(".selected").removeClass("selected");
 		$(this).addClass("selected");
 		var book = $(this).prevAll("tr").children("td[colspan='5']").length - 1;
@@ -35,7 +36,7 @@ function delete_row(bk, det)
 	{
 		$.ajax(
 		{
-			url: "/post/delete",
+			url: "/post/delete",  
 			type: "POST",
 			data:
 			{
@@ -48,6 +49,7 @@ function delete_row(bk, det)
 	})
 };
 
+//Function that is ready to draw a method
 $(document).ready(function(){
     draw_table();
 })

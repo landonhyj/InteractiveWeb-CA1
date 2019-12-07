@@ -1,16 +1,16 @@
-var http = require('http'), 
-    path = require('path'),
-    xml2js =require('xml2js'),
-    express = require('express'),
-    fs = require('fs'),
-    xmlParse = require('xslt-processor').xmlParse,
-    xsltProcess = require('xslt-processor').xsltProcess;
+var http = require('http'), //This module provides the HTTP server functionalities
+    path = require('path'),//The path module provides utilities for working with file and directory paths
+    xml2js =require('xml2js'),//This module does XML to JSON conversion and also allows us to get from JSON back to XML
+    express = require('express'),//This module allows this app to respond to HTTP Requests, defines the routing and renders back the required content
+    fs = require('fs'),//This module allows to work witht the file system: read and write files back
+    xmlParse = require('xslt-processor').xmlParse,//This module allows us to work with XML files
+    xsltProcess = require('xslt-processor').xsltProcess;//The same module allows us to utilise XSL Transformations
 
-var router = express();
-var server = http.createServer(router);
+var router = express();//The set our routing to be handled by Express
+var server = http.createServer(router);//This is where our server gets created
 
-router.use(express.static(path.resolve(__dirname, 'views')));
-router.use(express.urlencoded({extended: true}));
+router.use(express.static(path.resolve(__dirname, 'views')));//We define the views folder as the one where all static content will be served
+router.use(express.urlencoded({extended: true}));//We allow the data sent from the client to be coming in as part of the URL in GET and POST requests
 router.use(express.json());// Function to read in XML file and convert it to JSON
 
 // Function to read in XML file and convert it to JSON
@@ -86,8 +86,8 @@ router.get('/get/html', function(req, res) {
 
     res.writeHead(200, {'Content-Type': 'text/html'});
 
-    var xml = fs.readFileSync('dublinBookstore.xml', 'utf8');
-    var xsl = fs.readFileSync('dublinBookstore.xsl', 'utf8');
+    var xml = fs.readFileSync('dublinBookstore.xml', 'utf8');//We are reading in the XML file
+    var xsl = fs.readFileSync('dublinBookstore.xsl', 'utf8');//We are reading in the XSL file
     var doc = xmlParse(xml); //Parsing our XML file
     var stylesheet = xmlParse(xsl); //Parsing our XSL file
 
@@ -97,7 +97,7 @@ router.get('/get/html', function(req, res) {
 
 });
 
-
+//This is where we as the server to be listening to user with a specified IP and Port
 server.listen(process.env.port || 3000, process.env.IP || "0.0.0.0", function(){
     var addr = server.address();
     console.log("Server is listening at", addr.address + ":" + addr.port);

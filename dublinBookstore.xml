@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <bookstore>
+    <!-- Science fiction category with the details of books -->
   <book category="Science Fiction">
     <details>
       <title>Brave New World</title>
@@ -26,6 +27,8 @@
       <price>9.23</price>
     </details>
   </book>
+
+    <!-- Non fiction category with the details of books -->
   <book category="Non Fiction">
     <details>
       <title>The Victorian Internet</title>
@@ -46,6 +49,8 @@
       <price>9.30</price>
     </details>
   </book>
+      
+    <!-- Fiction category with the details of books -->
   <book category="Fiction">
     <details>
       <title>On the Come Up</title>

@@ -7,47 +7,35 @@ html {
 
 }
 
-.text-muted{
-    font-weight: bold;
-    color: black;
-
-}
+/*Nagivation title style with font bold and color */
 .navbar-brand{
     font-weight: bold;
     color: black;
 
 }
 
+/* Nagivation links style with font bold and color  */
 .nav-item{
     font-weight: bold;
     color: black;
 
 }
 
-.option{
-    font-weight: bold;
-
-
-}
-
+/* Nagivation items with style of display ,padding ,and bg color  */
 a {
   display: inline;
-  padding: 8px;
+  /* the size of block that hold the nagivation item */
+  padding: 50px;
   background-color: #CD853F;
 }
 
+/* Color change when cursor hover to the navigation links */
 a:hover {
   background-color: rgba(61, 36, 3, 0.705);
 }
 
-.sec-title{
-    text-align: left
-}
-
+/* Background picture style */
 #bg {
-  top: 0; 
-  left: 0; 
-
   object-fit: cover;	
   /* Preserve aspet ratio */
   min-width: 100%;
@@ -62,7 +50,10 @@ body {
   margin-bottom: 70px;
   font-family: oblique;
 }
+
+/* Footer style  */
 .footer {
+  font-weight: bold;
   position: fixed;
   display: block;
   bottom: 0;
@@ -72,40 +63,50 @@ body {
   line-height: 50px; /* Vertically center the text there */
   background-color: Peru ;
 }
+
+/* Table ,table's head and table's data style */
 table, th, td {
+    /* Border styling with separate style */
      border-collapse: separate;
-     border: 5px solid black;
-     text-align: center;
+     border: 5px solid rgb(54, 52, 50);
+     text-align: left;
+     /* The mouse cursor change to pointer when hover to a row data  */
      cursor:pointer;
+     color: rgb(148, 132, 114)
 
 }
+
+/* Table with 100% width  */
  table {
-     border-collapse: collapse;
      width:100%;
 }
+
+/* Table data and table head style */
  td, th {
-     border: 1px solid #999;
+     border: 1px solid rgb(0, 0, 0);
      padding: 0.5rem;
-     text-align: left;
      cursor:pointer;
      
 }
 
-
+/* Table head style with font weight bold */
  th {
      font-weight: bold;
 }
 
+/* When selected a table row data ,row will became red color */
 .selected {
             background-color: #dc3545;
             color:rgb(44, 39, 39);
 }
 
+/* Row style with width and margin */
 .row {
   width: 550px;
   margin: 30px auto;
 }
 
+/* From here until bottom, is the style for signup form that placed inside signup's page that i take from another website ,I'll put a reference of the website in the report*/
 .col {
   width: 250px;
   float: left;
@@ -124,11 +125,13 @@ table, th, td {
   border-left: 1px solid #aaa;
 }
 
+/* Header with font weight and margin */
 h1 {
   font-weight: 100;
   margin: 0;
 }
 
+/* The button style */
 .btn {
 	background-color: #8E8E8E;
 	border: 0;
@@ -136,12 +139,12 @@ h1 {
 	color: #FFF;
 	cursor: pointer;
 	box-shadow: 2px 2px 2px #111;
-  width: 100%;
+    width: 100%;
 	height: 40px;
-	text-align: left;
-  position: relative;
-  padding: 0;
-  margin: 10px 0;
+	text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 10px 0;
 }
 
 .btn span {
@@ -158,10 +161,12 @@ h1 {
   margin-right: 10px
 }
 
+/* The facebook button with blue color background */
 .facebook {
   background-color: #3B5998;
 }
 
+/* The facebook icon stay at the left of the block */
 .facebook i {
 	float: left;
 	width: 44px;

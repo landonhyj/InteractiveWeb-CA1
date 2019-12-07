@@ -18,7 +18,7 @@
                 <tbody>
                     <xsl:for-each select="/bookstore/book">
                         <tr>
-                            <td colspan="5">
+                            <td colspan="5" align="left">
                                 <xsl:value-of select="@category"/>
                             </td>
                         </tr>
@@ -26,7 +26,7 @@
                         <xsl:for-each select="details">
                             <tr id="{position()}">
 
-                        <!-- Printing each data details which store in xml file  -->
+                    <!-- Printing each data details which store in xml file            -->
                                     <td></td>
                                     <td>
                                         <xsl:value-of select="title" />
